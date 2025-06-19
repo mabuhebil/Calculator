@@ -21,7 +21,6 @@ body {
     height: 55px;
     box-shadow: inset -2px -2px 5px #67bdcc,
         inset 2px 2px 5px #39b3c9;
-    margin-bottom: 20px;
 }
 
 .result input {
@@ -35,4 +34,28 @@ body {
     text-align: right;
     pointer-events: none;
     color: #555555;
+}
+
+.container form .buttonsBox {
+    text-align: center;
+    padding: 30px 0 10px 0;
+}
+
+.buttonsBox input[type="button"] {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    margin: 5px;
+    border: none;
+    background-color: rgb(235, 231, 231);
+    cursor: pointer;
+    box-shadow: -2px -2px 5px #67bdcc,
+        2px 2px 5px #39b3c9;
+}
+
+.buttonsBox input[type="button"]:focus {
+    box-shadow: inset -2px -2px 5px #67bdcc,
+        inset 2px 2px 5px #39b3c9;
+    transform: scale(0.99);
+    color: #39b3c9;
 }
