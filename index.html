@@ -37,7 +37,8 @@
                     <input type="button" value="0" name="b0" onclick="handel(this.value)">
                     <input type="button" value="." name="bdot" onclick="handel(this.value)">
                     <input type="button" value="/" name="bAva" onclick="handel(this.value)">
-                    <input type="button" value="=" name="bAs" onclick="calc()">
+                    <input type="button" title="click two time to clear" value="=" name="bAs" onclick="calc()"
+                        class="btnEq">
                 </div>
             </div>
         </form>
@@ -56,6 +57,11 @@
                 inputField.value = eval(inputField.value)
             }
         }
+        const btnEq = document.querySelector('.btnEq')
+
+        btnEq.addEventListener('dblclick', () => {
+            inputField.value = '';
+        })
 
     </script>
 </body>
